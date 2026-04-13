@@ -753,34 +753,61 @@
 document.querySelector(".contact-form").addEventListener("submit", async function(e) {
     e.preventDefault();
 
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !phone || !subject || !message) {
+        alert("Please fill all fields ❗");
+        return;
+    }
+
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Enter a valid email ❗");
+        return;
+    }
+
+   
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Enter valid 10-digit phone number ❗");
+        return;
+    }
+
     const button = document.querySelector(".submit-box");
-    button.disabled = true;
     button.innerText = "Sending...";
 
     const data = {
-        name: name.value,
-        email: email.value,
-        phone: phone.value,
-        subject: subject.value,
-        message: message.value
+        name,
+        email,
+        phone,
+        subject,
+        message
     };
 
-try {
-    const res = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    });
+    try {
+        const res = await fetch("/api/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
 
         const result = await res.json();
         alert(result.message);
+
+       
+        document.querySelector(".contact-form").reset();
+
     } catch (error) {
-        alert("Error sending message");
+        alert("Error sending message ❌");
     }
 
-    button.disabled = false;
     button.innerText = "Submit";
 });
 </script>
