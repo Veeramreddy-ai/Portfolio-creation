@@ -17,11 +17,12 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: subject,
+      subject: subject || "Contact Form Message",
+      replyTo: email,
       html: `
-        <h3>New Contact Message</h3>
+        <h3>New Message</h3>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone}</p>
@@ -29,9 +30,10 @@ export default async function handler(req, res) {
       `
     });
 
-    return res.status(200).json({ message: "Message sent ✅" });
+    return res.status(200).json({ message: "Message sent successfully ✅" });
 
   } catch (error) {
-    return res.status(500).json({ message: "Error ❌" });
+    console.log(error);
+    return res.status(500).json({ message: "Error sending message ❌" });
   }
 }
