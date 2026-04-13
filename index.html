@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -21,8 +22,8 @@
             <li><a href="#skills" class="lin">Skills</a></li>
             <li><a href="#projects" class="link">Projects</a></li>
             <li><a href="#resume" class="links">Resume</a></li>
-            <li><a href="#" class="con">Contact Me</a></li>
-            <button class="navbtn"><a href="#">Hire Me</a></button>
+            <li><a href="#contact" class="con">Contact Me</a></li>
+            <button class="navbtn"><a href="#contact">Hire Me</a></button>
         </ol>
         <div class="menu">
             <a href="#offcanvas">
@@ -36,27 +37,27 @@
             <ol class="menu-link">
                 <li><a href="#home" class="l">Home</a></li>
                 <li><a href="#about" class="li">About</a></li>
-                <li><a href="#" class="lin">Skills</a></li>
+                <li><a href="#skills" class="lin">Skills</a></li>
                 <li><a href="#projects" class="link">Projects</a></li>
-                <li><a href="#" class="links">Resume</a></li>
-                <li><a href="#" class="con">Contact Me</a></li>
-                <li><a href="#" class="navbtn1">Hire Me</a></li>
+                <li><a href="#resume" class="links">Resume</a></li>
+                <li><a href="#contact" class="con">Contact Me</a></li>
+                <li><a href="#contact" class="navbtn1">Hire Me</a></li>
             </ol>
         </div>
     </nav>
 
-    <section class="hero-section" id="home">
+    <section class="hero-section" id="home" data-aos="zoom-in" data-aos-duration="2000">
         <div class="hero-text">
             <p style="font-size: 1.6rem; color: white;"><b>Hello I'm</b></p>
-            <h1 class="name">Neha Reddy</h1>
-            <p class="role"><b>Aspiring Java <b style="color: #22C55E;">Full Stack</b> Developer</b></p>
+            <h1 class="name" data-aos="fade-right">Neha Reddy</h1>
+            <p class="role"><b>Aspiring <b class="typed" style="color: #22C55E;"></b> </b></p>
             <p class="hero-para">I build scalable backend applications using Java, Spring Boot, Hibernate, and MySQL</p>
             <p style="color: white; margin-top: 5px;">and create responsive web applications using modern technologies.
             </p> <br>
 
             <div class="buttons">
                 <button class="btn1">Hire Me</button>
-                <a href="./assets/Backend_Resume.pdf" download class="btn2">
+                <a href="./assets/Backend_Resume1.pdf" download class="btn2">
                     <span class="download-text">Resume <i
                             class="fa-solid fa-circle-arrow-down download-icon"></i></span>
                 </a><br>
@@ -75,15 +76,78 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                    <div class="card1" data-aos="zoom-in">
+                        <img src="./assets/image.png" alt="" class="img5">
+                        <h1 class="about-title1">V. Neha Reddy</h1>
+                        <p class="about-para1">Java Full Stack Developer</p>
+                        <div class="flex">
+                            <div class="email2 ">
+                                <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i>
+                                <span>nehaveeramreddy@gmail.com</span>
+                            </div>
+                            <div class="phn2">
+                                <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                                <span>7093008170</span>
+                            </div>
+                            <div class="location2">
+                                <i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255);"></i>
+                                <span>Secunderabad,Telangana - 500015</span>
+                            </div>
+                            <a href="./assets/Backend_Resume1.pdf" download class="btn3 btn5" data-aos-duration="1700">
+                                <span class="download-text4">Resume <i
+                                        class="fa-solid fa-circle-arrow-down download-icon1"></i></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
+                    <div class="flex2">
+                        <h1 class="about-me">About Me</h1>
+                        <p class="about-para3">Full-stack developer with a strong foundation in Java, SQL, and Data Structures, focused on building scalable and efficient applications. Experienced in backend development using Spring Boot, JDBC, and MySQL.</p>
+                            
+                            <p class="about-para3">Skilled in frontend technologies including HTML, CSS, JavaScript, and React, creating responsive and user-friendly interfaces. Proficient in designing databases, developing APIs, and integrating systems for real-world applications.</p>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="wrench-class" data-aos="fade-up" data-aos-duration="2000">
+                <i class="fa-solid fa-wrench fa-flip-horizontal wrench" style="color: rgb(255, 255, 255);"></i>
+                <p class="wrench-text">Scalable Solutions</p><br>
+                <p class="wrench-para">I build simple and responsive applications using Java and web technologies with
+                    focus on usability and performance.</p>
+            </div>
+            <div class="clean-code" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/angle-left-right.png" alt="" class="about-left-right">
+                <p class="code-text">Clean and Efficient Code</p><br>
+                <p class="code-para">I write clear and structured code that is easy to understand, maintain, and
+                    improve.</p>
+            </div>
+            <div class="bulb-class" data-aos="fade-up" data-aos-duration="2000">
+                <i class="fa-regular fa-lightbulb bulb" style="color: rgb(255, 255, 255);"></i>
+                <p class="bulb-text">Innovative Ideas</p><br>
+                <p class="bulb-para">I focus on creating simple and useful features by applying logical thinking and
+                    practical ideas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="about" data-aos="fade-up" data-aos-duration="2000">
         <h1 style="color: white;"><b class="about-title">About Me</b></h1>
-        <div class="about">
-            <!-- <h1 style="color: white;"><b class="about-title">About Me</b></h1> -->
-            <div class="about-image">
+        <div class="about" data-aos="fade-up" data-aos-duration="2000">
+            <h1 style="color: white;"><b class="about-title">About Me</b></h1>
+            <div class="about-image" data-aos="fade-up" data-aos-duration="2000">
                 <img src="./assets/neha.png" alt="" class="about-img">
             </div>
-            <div class="about-details">
-                <p class="para"><span class="aboutpara">I am an aspiring full stack developer with an interest in
+            <div class="about-details" data-aos="fade-up" data-aos-duration="2000">
+                <p class="para" data-aos="fade-up" data-aos-duration="2000"><span class="aboutpara">I am an aspiring
+                        full stack developer with an interest in
                         building practical and
                         user-friendly applications. I enjoy working with Java, MySQL, and web technologies, and I am
                         continuously learning to improve my skills.</span></p><br>
@@ -95,39 +159,145 @@
                 <p class="para"><b style="color: white;">Email</b><b class="colon5">:</b>nehaveeramreddy@gmail.com</p>
                 <br>
                 <p class="para"><b style="color: white;">Phone</b><b class="colon6">:</b>7093008170</p><br>
-                <a href="./assets/Backend_Resume.pdf" download class="btn3">
+                <a href="./assets/Backend_Resume.pdf" download class="btn3" data-aos="fade-up" data-aos-duration="1700">
                     <span class="download-text1">Resume <i
                             class="fa-solid fa-circle-arrow-down download-icon1"></i></span>
                 </a>
             </div>
         </div>
         <div class="icons">
-            <div class="wrench-class">
+            <div class="wrench-class" data-aos="fade-up" data-aos-duration="2000">
                 <i class="fa-solid fa-wrench fa-flip-horizontal wrench" style="color: rgb(255, 255, 255);"></i>
                 <p class="wrench-text">Scalable Solutions</p><br>
                 <p class="wrench-para">I build simple and responsive applications using Java and web technologies with
                     focus on usability and performance.</p>
             </div>
-            <div class="clean-code">
-                <img src="./assets/image.png" alt="" class="about-left-right">
+            <div class="clean-code" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./assets/angle-left-right.png" alt="" class="about-left-right">
                 <p class="code-text">Clean and Efficient Code</p><br>
                 <p class="code-para">I write clear and structured code that is easy to understand, maintain, and
                     improve.</p>
             </div>
-            <div class="bulb-class">
+            <div class="bulb-class" data-aos="fade-up" data-aos-duration="2000">
                 <i class="fa-regular fa-lightbulb bulb" style="color: rgb(255, 255, 255);"></i>
                 <p class="bulb-text">Innovative Ideas</p><br>
                 <p class="bulb-para">I focus on creating simple and useful features by applying logical thinking and
                     practical ideas.</p>
             </div>
         </div>
-    </section>
+    </section>  -->
 
-    <section class="resume-container" id="resume">
-        <h1 class="resume-title"><b>Resume</b></h1>
-        <p class="resume-para">Combining academic knowledge with hands-on project experience, I build efficient
-            applications using Java, MySQL, and web technologies.</p>
-        <div class="download-btn4">
+    <section class="resume-container" id="resume" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="resume-title" data-aos="fade-up"><b>Resume</b></h1>
+        <p class="resume-para" data-aos="fade-up">Combining academic knowledge with hands-on project experience, I build
+            efficient
+            applications using Java, MySQL, and web technologies.</p><br><br>
+
+        <div class="resume-flex">
+            <div class="n">
+                <h1 class="education" data-aos="fade-right"><b>Education</b></h1>
+                <div class="education-flex1" data-aos-duration="2000">
+                    <div>
+                        <i class="fa-solid fa-graduation-cap fa-flip-horizontal graduation-icon"
+                            style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="course-row">
+                        <div>
+                            <h1 class="course">B-Tech - 72%</h1>
+                            <h1 class="course1">Aurora's Scientific and Technological Institute</h1>
+                        </div>
+                        <div>
+                            <h1 class="details">2025</h1>
+                            <h1 class="details1">
+                                <i class="fa-solid fa-location-dot location-icon"
+                                    style="color: rgb(255, 255, 255);"></i>
+                                <span>Aushapur</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-flex2" data-aos-duration="2000">
+                    <div>
+                        <i class="fa-solid fa-book inter-icon" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="course-row">
+                        <div>
+                            <h1 class="course">Inter - 91%</h1>
+                            <h1 class="course1">Narayana Junior College</h1>
+                        </div>
+                        <div>
+                            <h1 class="details2">2021</h1>
+                            <h1 class="details3">
+                                <i class="fa-solid fa-location-dot location-icon"
+                                    style="color: rgb(255, 255, 255);"></i>
+                                <span>Hubsiguda</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-flex3" data-aos-duration="2000">
+                    <div>
+                        <i class="fa-solid fa-star ssc-icon" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="course-row">
+                        <div>
+                            <h1 class="course">SSC - 88%</h1>
+                            <h1 class="course1">Narayana E-Techno High School</h1>
+                        </div>
+                        <div>
+                            <h1 class="details4">2019</h1>
+                            <h1 class="details5">
+                                <i class="fa-solid fa-location-dot location-icon"
+                                    style="color: rgb(255, 255, 255);"></i>
+                                <span>Ramanthapur</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="e">
+                <h1 class="experience" data-aos="fade-left"><b>Experience</b></h1>
+                <div class="education-flex20 inspireLeap" data-aos-duration="2000">
+                    <div>
+                        <i class="fa-solid fa-book inter-icon" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="course-row">
+                        <div>
+                            <h1 class="course">InspireLeap</h1>
+                            <h1 class="course1">AI Intern Trainee</h1>
+                        </div>
+                        <div>
+                            <h1 class="details8">2025</h1>
+                            <h1 class="details3">
+                                <i class="fa-solid fa-location-dot location-icon"
+                                    style="color: rgb(255, 255, 255);"></i>
+                                <span>Remote</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-flex3 codegnan" data-aos-duration="2000">
+                    <div>
+                        <i class="fa-solid fa-star ssc-icon" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="course-row">
+                        <div>
+                            <h1 class="course">Codegnan</h1>
+                            <h1 class="course1">Java Full Stack Trainee</h1>
+                        </div>
+                        <div>
+                            <h1 class="details7">2026</h1>
+                            <h1 class="details5">
+                                <i class="fa-solid fa-location-dot location-icon"
+                                    style="color: rgb(255, 255, 255);"></i>
+                                <span>JNTUH</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-btn4" data-aos="fade-up" data-aos-duration="2000">
             <a href="./assets/Backend_Resume.pdf" download class="btn4">
                 <span class="download-text2">Resume <i class="fa-solid fa-circle-arrow-down download-icon2"></i></span>
             </a><br>
@@ -135,173 +305,485 @@
     </section>
 
     <section class="skills-container" id="skills">
-        <h1 class="skills-title"><b>My Skills</b></h1>
-        <p class="skills-para">My Skills Mastering the full spectrum of web technologies, I seamlessly integrate
+        <h1 class="skills-title" data-aos="fade-up" data-aos-duration="2000"><b>My Skills</b></h1>
+        <p class="skills-para" data-aos="fade-up" data-aos-duration="2000">My Skills Mastering the full spectrum of web
+            technologies, I seamlessly integrate
             front-end and back-end development to create cohesive, high-performing applications that deliver exceptional
             user experiences and meet diverse business needs</p>
-        <div class="progress-bars">
-            <div class="progress-bar1">
+        <div class="progress-bars" data-aos="fade-up" data-aos-duration="2000">
+            <div class="progress-bar1" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar1-text">Java</h5>
                 <h5 class="progress-bar1-percentage">90%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 90%;border-top-right-radius: 20px;border-bottom-right-radius: 20px;background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar2">
+            <div class="progress-bar2" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar2-text">MySQL</h5>
                 <h5 class="progress-bar2-percentage">90%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 90%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar3">
+            <div class=" progress-bar3" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar3-text">JDBC</h5>
                 <h5 class="progress-bar3-percentage">90%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 90%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar4">
+            <div class=" progress-bar4" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar4-text">HTML</h5>
                 <h5 class="progress-bar4-percentage">95%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 95%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 95%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar5">
+            <div class=" progress-bar5" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar5-text">CSS</h5>
                 <h5 class="progress-bar5-percentage">90%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 90%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar6">
+            <div class=" progress-bar6" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar6-text">JavaScript</h5>
-                <h5 class="progress-bar6-percentage">5%</h5>
+                <h5 class="progress-bar6-percentage">75%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 5%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 75%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar7">
+            <div class=" progress-bar7" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar7-text">DBMS</h5>
-                <h5 class="progress-bar7-percentage">85%</h5>
+                <h5 class="progress-bar7-percentage">75%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 85%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 75%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar8">
+            <div class=" progress-bar8" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar8-text">Spring</h5>
                 <h5 class="progress-bar8-percentage">90%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 90%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar9">
+            <div class=" progress-bar9" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar9-text">Spring Boot</h5>
                 <h5 class="progress-bar9-percentage">75%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 75%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 75%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar10">
+            <div class=" progress-bar10" data-aos="fade-up" data-aos-duration="2000">
                 <h5 class="progress-bar10-text">JSP</h5>
-                <h5 class="progress-bar10-percentage">85%</h5>
+                <h5 class="progress-bar10-percentage">
+                    85%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 85%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 85%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar11">
-                <h5 class="progress-bar10-text">Git & GitHub</h5>
-                <h5 class="progress-bar10-percentage">98%</h5>
+            <div class=" progress-bar11" data-aos="fade-up" data-aos-duration="2000">
+                <h5 class="progress-bar10-text">
+                    Git & GitHub</h5>
+                <h5 class="progress-bar10-percentage">
+                    98%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 98%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 98%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar12">
-                <h5 class="progress-bar10-text">OOPs</h5>
-                <h5 class="progress-bar10-percentage">85%</h5>
+            <div class=" progress-bar12" data-aos="fade-up" data-aos-duration="2000">
+                <h5 class="progress-bar10-text">
+                    OOPs</h5>
+                <h5 class="progress-bar10-percentage">
+                    85%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 85%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 85%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
-            <div class="progress-bar13">
-                <h5 class="progress-bar10-text">Data Structures</h5>
-                <h5 class="progress-bar10-percentage">65%</h5>
+            <div class=" progress-bar13" data-aos="fade-up" data-aos-duration="2000">
+                <h5 class="progress-bar10-text">
+                    Data
+                    Structures
+                </h5>
+                <h5 class="progress-bar10-percentage">
+                    50%</h5>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success" style="width: 65%"></div>
+                    aria-valuemin="0" aria-valuemax="100"
+                    style="background-color: rgb(157, 157, 157); height: 15px; border-radius: 20px;">
+                    <div class="progress-bar"
+                        style="width: 50%;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background: linear-gradient(red,orange,red);">
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="project-container" id="projects">
-        <h1 class="project-title"><b>Projects</b></h1>
-        <p class="project-para">Works Building seamless digital experiences through robust full stack development.</p>
-        <div class="container">
-            <div class="card">
-                <img src="./assets/Fraud detection.png" alt="" class="fraud">
-                <div class="description1">
-                    <h2>Fraud Detection App</h2>
-                    <p style="padding: 0px;">- Anomaly Detection</p>
+    <section class=" project-container" id="projects" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="project-title" data-aos="fade-up" data-aos-duration="2000">
+            <b>Projects</b>
+        </h1>
+        <p class="
+                                                                                                                project-para"
+            data-aos="fade-up" data-aos-duration="2000">
+            Works
+            Building
+            seamless
+            digital
+            experiences
+            through
+            robust
+            full
+            stack
+            development.
+        </p>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://github.com/Veeramreddy-ai/SpringBoot_Security_Register_Login" target="_blank"
+                    class="card">
+                    <img src="./assets/Security.png" class="fraud">
+
+                    <div class="transform">
+                        <h3>AuthGuard System</h3>
+                        <p>Secure Authentication</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>Security</span>
+                    <span>JWT</span>
+                    <span>Auth</span>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/Smart Parking.png" alt="" class="fraud">
-                <div class="description2">
-                    <h2>Smart Parking System</h2>
-                    <p style="padding: 0px;">- Smart Parking System</p>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://your-project-link.com" target="_blank" class="card">
+                    <img src="./assets/fraud.png" class="fraud">
+
+                    <div class="transform">
+                        <h3>Fraud Detection App</h3>
+                        <p>Anomaly Detection</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>ML</span>
+                    <span>Analytics</span>
+                    <span>Security</span>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/weather.png" alt="" class="fraud">
-                <div class="description3">
-                    <h2>Weather Forecast App</h2>
-                    <p style="padding: 0px;">- Weather Forecasting</p>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://github.com/Veeramreddy-ai/Spring_Boot_Data_Jpa_With_JUint" target="_blank"
+                    class="card">
+                    <img src="./assets/unit.png" class="fraud">
+
+                    <div class="transform">
+                        <h3>TestDriven Service</h3>
+                        <p>Reliable Backend</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>JUnit</span>
+                    <span>Testing</span>
+                    <span>Backend</span>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/Crop.png" alt="" class="fraud">
-                <div class="description4">
-                    <h2>Crop Prediction System</h2>
-                    <p style="padding: 0px;">- Yield Prediction</p>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://github.com/Veeramreddy-ai/SpringBoot_JPARest_With_Exceptions" target="_blank"
+                    class="card">
+                    <img src="./assets/API.png" class="fraud">
+
+                    <div class="transform">
+                        <h3>Resilient API System</h3>
+                        <p>Robust APIs</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>REST API</span>
+                    <span>JPA</span>
+                    <span>Backend</span>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/Employee.png" alt="" class="fraud">
-                <div class="description5">
-                    <h2>Employee Management System</h2>
-                    <p style="padding: 0px;">- Data Management</p>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://github.com/Veeramreddy-ai/Smart-Parking-Management-System" target="_blank"
+                    class="card">
+                    <img src="./assets/Smart Parking.png" alt="" class="fraud">
+
+                    <div class="transform">
+                        <h3>Smart Parking System</h3>
+                        <p>Smart Parking</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>MySQL</span>
+
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/University.png" alt="" class="fraud">
-                <div class="description6">
-                    <h2>University Management System</h2>
-                    <p style="padding: 0px;">- Entity Relationships</p>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://github.com/Veeramreddy-ai/weather-now" target="_blank" class="card">
+                    <img src="./assets/weather.png" alt="" class="fraud">
+
+                    <div class="transform">
+                        <h3>weather Forecast App</h3>
+                        <p>Weather Forecasting</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>API</span>
+                    <span>Frontend</span>
+                    <span>Weather</span>
                 </div>
             </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://your-project-link.com" target="_blank" class="card">
+                    <img src="./assets/Crop.png" alt="" class="fraud">
+
+                    <div class="transform">
+                        <h3>Crop Prediction System</h3>
+                        <p>Yield Prediction</p>
+
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </a>
+                <div class="tags" data-aos="fade-up" data-aos-duration="2000">
+                    <span>ML</span>
+                    <span>Prediction</span>
+                    <span>Python</span>
+                </div>
+            </div>
+            <!-- <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://your-project-link.com" target="_blank" class="card">
+                 <img src="./assets/Crop.png" alt="" class="fraud">
+
+                    <div class="transform">
+                         <h3>Crop Prediction System</h3>
+                            <p>Yield Prediction</p>
+
+                         <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+            </a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://your-project-link.com" target="_blank" class="card">
+                 <img src="./assets/Crop.png" alt="" class="fraud">
+
+                    <div class="transform">
+                         <h3>What's Up Clone</h3>
+                            <p>Yield Prediction</p>
+
+                         <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+            </a>
+            </div> -->
+
         </div>
     </section>
 
+    <section class="contact-section" id="contact" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="contact-title" data-aos="fade-up" data-aos-duration="2000"><b>Contact Me</b></h1>
+        <p class="contact-para" data-aos="fade-up" data-aos-duration="2000">Drop a message using the form below, or
+            reach me by phone from 9:00 am. to 9:00 pm., Monday to Friday. Can’t wait to hear from you!</p>
+        <div class="contact-flex" data-aos="fade-right" data-aos-duration="2000">
+            <div class="contact-grid">
+                <div class="contact-item1 " data-aos="fade-right" data-aos-duration="2000">
+                    <i class="fa-solid fa-location-dot contact-icon" style="color: rgb(255, 255, 255);"></i>
+                    <div>
+                        <span class="address">Address</span>
+                        <p class="add">Tirumalagiri, Secunderabad, Telangana</p>
+                    </div>
+                </div>
+                <div class="contact-item " data-aos="fade-right" data-aos-duration="2000">
+                    <i class="fa-solid fa-envelope email-icon" style="color: rgb(255, 255, 255);"></i>
+                    <div>
+                        <span class="address">Email</span>
+                        <p class="add">nehaveeramreddy@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item " data-aos="fade-right" data-aos-duration="2000">
+                    <i class="fa-solid fa-phone phone-icon" style="color: rgb(255, 255, 255);"></i>
+                    <div>
+                        <span class="address">Phone</span>
+                        <p class="add">7093008170</p>
+                    </div>
+                </div>
+                <div class="contact-item " data-aos="fade-right" data-aos-duration="2000">
+                    <i class="fa-brands fa-linkedin linkedin-icon" style="color: rgb(255, 255, 255);"></i>
+                    <div>
+                        <span class="address">Linkedin</span>
+                        <p class="add">Veeramreddy Neha Reddy</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left" data-aos-duration="1700">
+
+                <div class="text-boxes" data-aos="fade-left" data-aos-duration="1700">
+                    <input type="text" id="name" name="name" placeholder="   Your Name" required class="name-box">
+                    <input type="email" id="email" name="email" placeholder="   Your Email" required class="email-box">
+                </div>
+
+                <div class="text-boxes1" data-aos="fade-left" data-aos-duration="1700">
+                    <input type="text" id="phone" name="phone" placeholder="   Your Phone" required class="phone-box">
+                    <input type="text" id="subject" name="subject" placeholder="   Subject" required
+                        class="subject-box">
+                </div>
+
+                <textarea id="message" name="message" rows="5" placeholder="   Write Your message Here..." required
+                    class="message-box" data-aos="fade-left"></textarea><br>
+
+                <button type="submit" class="submit-box"><b class="submit-box1"
+                        data-aos-duration="1700">Submit</b></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="faqs-section">
+        <h1 class="faq-title">FAQ'S</h1>
+    </section> -->
+
+    <section class="footer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="role-flex">
+            <p class="role1"><b>Aspiring <b class="typed" style="color: #22C55E;"></b> </b></p>
+            <p class="hero-para1" data-aos="fade-up" data-aos-duration="2000">I build scalable backend applications
+                using Java, Spring Boot, Hibernate, and MySQL
+                <span style="color: white; margin-top: 5px;">and create responsive web applications using modern
+                    technologies.
+                </span>
+            </p>
+        </div>
+        <div class="web1">
+            <a href="https://github.com/Veeramreddy-ai"><i class="fa-brands fa-github github1"
+                    data-aos-duration="2000"></i></a>
+            <a href="https://www.linkedin.com/in/veeramreddy-neha-reddy-0981822a4/"><i
+                    class="fa-brands fa-linkedin linkedin1" data-aos-duration="2000"></i></a>
+            <a href="https://instagram.com/neha_reddii_1601"><i class="fa-brands fa-instagram instagram1"
+                    data-aos-duration="2000"></i></a>
+            <a href="https://www.facebook.com/veeramreddy.nehareddy"><i class="fa-brands fa-facebook facebook1"
+                    data-aos-duration="2000"></i></a>
+        </div>
+        <ol class="menu-link1" data-aos="fade-up" data-aos-duration="2000">
+            <li><a href="#home" class="l"><b>Home</b></a></li>
+            <li><a href="#about" class="li"><b>About</b></a></li>
+            <li><a href="#skills" class="lin"><b>Skills</b></a></li>
+            <li><a href="#projects" class="link"><b>Projects</b></a></li>
+            <li><a href="#resume" class="links"><b>Resume</b></a></li>
+            <li><a href="#contact" class="con"><b>Contact Me</b></a></li>
+            <li><a href="#contact" class="navbtn2"><b>Hire Me</b></a></li>
+        </ol>
+
+        <div class="footer-container" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="footer-name">Neha</h1>
+        </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/cc345caac3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init(
+            {
+                duration: 2000,
+                once: true
+            }
+        );
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script>
+document.querySelector(".contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const button = document.querySelector(".submit-box");
+    button.disabled = true;
+    button.innerText = "Sending...";
+
+    const data = {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        subject: subject.value,
+        message: message.value
+    };
+
+try {
+    const res = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+        const result = await res.json();
+        alert(result.message);
+    } catch (error) {
+        alert("Error sending message");
+    }
+
+    button.disabled = false;
+    button.innerText = "Submit";
+});
+</script>
 </body>
 
 </html>
