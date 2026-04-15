@@ -428,6 +428,12 @@ p {
 
 }
 
+section div button a{
+    /* position: relative; */
+    text-decoration: none;
+    color: white;
+}
+
 .neha {
     margin-top: 40px;
     /* margin-right: 220px; */
@@ -1819,7 +1825,7 @@ section a:hover::after {
 }
 
 .faqs-section {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .faq-title {
@@ -1962,7 +1968,148 @@ section a:hover::after {
     line-height: 1.7;
 }
 
+.faq-name{
+    color: white;
+}
 
+.faq-ans{
+    color: white;
+}
+
+.container1{
+    border: 2px solid white;
+    width: 1300px;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.faq-1,
+.faq-2,
+.faq-3,
+.faq-4,
+.faq-5,
+.faq-6,
+.faq-7 {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;   
+    gap: 15px;             
+    cursor: pointer;
+}
+
+
+.star {
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+.faq-1:hover,
+.faq-2:hover,
+.faq-3:hover,
+.faq-4:hover,
+.faq-5:hover,
+.faq-6:hover,
+.faq-7:hover {
+    border: 2px solid orangered;
+    background-color: black;
+    color: white;
+}
+
+
+.faq-1:hover .star,
+.faq-2:hover .star,
+.faq-3:hover .star,
+.faq-4:hover .star,
+.faq-5:hover .star,
+.faq-6:hover .star,
+.faq-7:hover .star {
+    transform: rotate(-45deg);
+    color: white;
+}
+
+.faq-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.faq-ans,
+.faq-name{
+    margin-top: 20px;
+}
+
+.faq-ans1 {
+    background-color: #FFDDD6;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 13px;
+    position: relative;
+    padding: 50px 20px 20px 20px; 
+    min-height: 640px;
+}
+
+.star1 {
+    color: #FF4E23;
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.answer {
+    display: none;
+    margin-top: 20px;
+}
+
+.answer.active {
+    display: block;
+}
+
+.answer {
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.answer strong {
+    color: #FF4E23;  
+}
+
+.answer {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+.faq-1.active,
+.faq-2.active,
+.faq-3.active,
+.faq-4.active,
+.faq-5.active,
+.faq-6.active,
+.faq-7.active {
+    border: 2px solid orangered;
+    background-color: black;
+    color: white;
+}
+
+.faq-1.active .star,
+.faq-2.active .star,
+.faq-3.active .star,
+.faq-4.active .star,
+.faq-5.active .star,
+.faq-6.active .star,
+.faq-7.active .star {
+    transform: rotate(-45deg);
+    color: white;
+}
 
 /* .icons{
     width: 40px;
