@@ -13,3 +13,21 @@ questions.forEach((q, index) => {
         answers[index].classList.add("active");
     });
 });
+
+
+
+const items = document.querySelectorAll(".faq-item");
+
+items.forEach(item => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+
+       
+        items.forEach(i => i.classList.remove("active"));
+
+       
+        item.classList.add("active");
+
+    });
+});

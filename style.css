@@ -16,7 +16,6 @@
     justify-content: space-between;
     font-weight: bold;
     position: fixed;
-    /* top: 0px; */
     position: relative;
     z-index: 1000;
     padding: 0px;
@@ -1978,10 +1977,11 @@ section a:hover::after {
 
 .container1{
     border: 2px solid white;
-    width: 1300px;
-    align-items: center;
+    width: 100%;          
+    max-width: 1300px;    
+    margin: 40px auto;    
     border-radius: 15px;
-    margin-top: 80px;
+    padding: 20px;
 }
 
 .faq-1,
@@ -1994,7 +1994,7 @@ section a:hover::after {
     width: 100%;
     background-color: white;
     border-radius: 8px;
-    padding: 18px 20px;
+    padding: 13px 25px;
     display: flex;
     align-items: center;   
     gap: 15px;             
@@ -2051,8 +2051,7 @@ section a:hover::after {
     margin-top: 25px;
     border-radius: 13px;
     position: relative;
-    padding: 50px 20px 20px 20px; 
-    min-height: 640px;
+    padding: 40px 20px 20px 20px;
 }
 
 .star1 {
@@ -2111,12 +2110,220 @@ section a:hover::after {
     color: white;
 }
 
+.btn10{
+    background-color: #FF4E23;
+    width: 100%;
+    color: white; 
+    border-radius: 15px;
+    border: 2px solid orangered;
+    margin-top: 20px;
+}
+
+
+
 /* .icons{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 } */
 
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.faq-item.active .faq-question {
+    background: black;
+    color: white;
+    border: 2px solid orangered;
+}
+
+
+
+.faq-flex1 {
+    display: none;  
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.faq-item {
+    display: block;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0 0 25px;
+    font-size: 1rem;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+    margin-top: 10px;
+}
+
+
+.faq-item.active .faq-question {
+    background-color: black;
+    color: white;
+    border: 2px solid orangered;
+}
+
+
+.faq-item.active .faq-question .star {
+    color: white;
+    transform: rotate(-45deg);
+}
+
+
+.faq-item.active .faq-answer {
+    background-color: #FFDDD6;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+@media (min-width: 996px) {
+
+    .faq-flex {
+        display: flex;   
+    }
+
+    .faq-ans1 {
+        display: block; 
+    }
+
+    .faq-flex1 {
+        display: none;   
+    }
+}
+
+
+
+@media (max-width: 995px) {
+
+    .faq-flex {
+        display: none;   
+    }
+
+    .faq-ans1 {
+        display: none;   
+    }
+
+    .faq-flex1 {
+        display: flex;   
+        flex-direction: column;
+    }
+
+    .faq-ans {
+        display: none;   
+    }
+}
+
+@media (max-width: 768px) {
+
+    .faq-1,
+    .faq-2,
+    .faq-3,
+    .faq-4,
+    .faq-5,
+    .faq-6,
+    .faq-7 {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .answer {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .faq-answer {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .faq-ans1 {
+        display: none;  
+    }
+}
+
+@media (max-width: 992px) {
+
+    .container1 {
+        padding: 15px;
+    }
+
+    .faq-flex {
+        gap: 15px;
+    }
+
+    .faq-ans1 {
+        margin-top: 20px;
+        padding: 35px 15px 15px;
+    }
+
+    .answer {
+        font-size: 1.05rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .faq-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .faq-name,
+    .faq-ans {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .faq-flex {
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    .faq-1,
+    .faq-2,
+    .faq-3,
+    .faq-4,
+    .faq-5,
+    .faq-6,
+    .faq-7 {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .faq-ans1 {
+        margin-top: 20px;
+        padding: 30px 12px 12px;
+    }
+
+    .answer {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .faq-btn {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}
 
 @media (min-width:0px) and (max-width:795px) {
     .container {
