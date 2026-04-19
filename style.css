@@ -525,12 +525,13 @@ section div button a{
 
 @keyframes words {
     0%   { content: "Java Full Stack Developer"; }
-    17%  { content: "Java Developer"; }
-    34%  { content: "Backend Developer"; }
-    51%  { content: "Creative Director & Developer"; }
-    68% { content: "Full Stack Learner"; }
-    85% {content: "Problem Solver";}
-    100% {content: "Java Full Stack Developer";}
+    14%  { content: "Frontend Developer"; }
+    28%  { content: "Backend Developer"; }
+    42%  { content: "Web Designer"; }
+    56%  { content: "Java Developer"; }
+    70%  { content: "Creative Director & Developer"; }
+    84%  { content: "Full Stack Learner"; }
+    100% { content: "Problem Solver"; }
 }
 
 .download-text {
