@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
+
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
@@ -8,6 +9,7 @@ export default async function handler(req, res) {
   const { name, email, phone, subject, message } = req.body;
 
   try {
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -16,6 +18,7 @@ export default async function handler(req, res) {
       }
     });
 
+    
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
@@ -30,23 +33,31 @@ export default async function handler(req, res) {
       `
     });
 
+    
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
       subject: "Thank you for contacting me",
       html: `
-       <h2>Hello ${name},</h2>
-      <p>Thank you for reaching out to me.</p>
-      <p>I have received your message and will get back to you as soon as possible.</p>
-      <br/>
-      <p>Best regards,</p>
-      <p><b>Veeramreddy Nehareddy</b></p>
-    `});
+        <h2>Hello ${name},</h2>
+        <p>Thank you for reaching out to me.</p>
+        <p>I have received your message and will get back to you as soon as possible.</p>
+        <br/>
+        <p>Best regards,</p>
+        <p><b>Veeramreddy Nehareddy</b></p>
+      `
+    });
 
-    return res.status(200).json({ message: "Message sent successfully ✅" });
+    return res.status(200).json({
+      message: "Message sent successfully ✅"
+    });
 
   } catch (error) {
+
     console.log(error);
-    return res.status(500).json({ message: "Error sending message ❌" });
+
+    return res.status(500).json({
+      message: "Error sending message ❌"
+    });
   }
 }
